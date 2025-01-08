@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Assets/Fashi.png" type="image/png">
+    <title>Formals</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            scroll-behavior: smooth;
+
+        }
+        body, h1, h2, h3, h4, h5, h6, .w3-wide {
+            font-family: "Montserrat", sans-serif;
+        }
+        .announcement-bar {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            justify-content: center;
+            padding: 15px 0;
+            margin-bottom: 10px;
+            /* font-weight: bold; */
+            text-shadow: 2px 2px 5px rgba(241, 232, 232, 0.7);
+            animation: slideIn 1s ease-out;
+            position: absolute;
+            height: 40px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            letter-spacing: 5px;
+    
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background-color: rgb(15, 206, 206);
+            margin-top: 25px;
+            height: 50px;
+
+        }
+        .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+        .search-box input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .basket {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .login-icon {
+        /* position: absolute; */
+        /* top: 20px; */
+        right: 50px;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
+    .login-icon:hover{
+        color: rgb(31, 146, 218);
+    }
+        .nav-links a {
+            font-family: "Roboto", sans-serif;
+        }
+        .product-card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            border-radius: 10px 10px 0 0;
+        }
+        .card-body {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+     <!-- Sale offer  -->
+     <nav class="navbar navbar-expand-lg bg-tertiary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand announcement-bar" href="index.html">FLAT 40% OFF ON ALL ITEMS</a>
+        </div>
+    </nav>
+      <!-- Navigation Menu  -->
+    <div class="navigation">
+        <div class="left">
+            <a class="navbar-brand active" href="index.html">FashionGroves</a>
+        </div>
+        <div class="center">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="unstiched.html">Unstitched</a></li>
+                                    <li><a class="dropdown-item" href="western.html">Western</a></li>
+                                    <li><a class="dropdown-item" href="formals.html">Formals</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                    Women Wear
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="dailyWear.html">Daily Wear</a></li>
+                                    <li><a class="dropdown-item" href="glam.html">Glam</a></li>
+                                    <li><a class="dropdown-item" href="signature.html">Signature</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="search-box">
+                <input type="text" placeholder="Search for products...">
+            </div>
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                <div class="basket">
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+            </a>
+            <a href="login.html" class="login-icon">
+                <i class="fa fa-user-circle"></i>
+            </a>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+     <!-- Product Cards Section -->
+     <section class="container my-5 ">
+        <h1 class="text-center">Formal Wear</h1>
+        <div class="row g-4" >
+           <!-- Product Cards Loop -->
+           <script>
+            // Array of products
+      const products = [
+          { img: 'Assets/image16.png', desc: '2 Piece Velvet Suit-Embroidered (Pret)', price: '4500 PKR' },
+          { img: 'Assets/image17.png', desc: 'Dyed Color Block Marina Co-Ord Set', price: '3800 PKR' },
+          { img: 'Assets/image18.png', desc: 'Dyed Color Block Marina Co-Ord Set', price: '3800 PKR' },
+          { img: 'Assets/image19.png', desc: 'Khaddar Shirt-Printed (Unstitched) Set', price: '3200 PKR' },
+          { img: 'Assets/image20.png', desc: 'Dyed Color Block Linen Co-Ord Set', price: '4000 PKR' },
+          { img: 'Assets/image21.png', desc: '3 Piece Silk Suit-Embroidered (Unstitched)', price: '5000 PKR' },
+          { img: 'Assets/image22.png', desc: 'Khaddar Shirt-Printed (Unstitched) Set', price: '3200 PKR' },
+          { img: 'Assets/image23.png', desc: '2 Piece Khaddar Suit-Printed (Unstitched)', price: '3600 PKR' }
+      ];
+      
+      // Render products dynamically
+      window.onload = () => {
+          let container = document.querySelector('.row.g-4');
+          products.forEach((product, index) => {
+              let productHTML = `
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                      <div class="card product-card">
+                          <img src="${product.img}" class="card-img-top" alt="Product Image">
+                          <div class="card-body">
+                              <p class="card-text description">${product.desc}</p>
+                              <p class="price">${product.price}</p>
+                              <button  class="btn btn-primary w-45 buy-now" data-index="${index}">Buy Now</button>
+                              <button  class="btn btn-primary w-45 add-to-cart" data-index="${index}">Add To Cart</button>
+                          </div>
+                      </div>
+                  </div>
+              `;
+              container.innerHTML += productHTML;
+          });
+      
+          // Add event listeners to 'Buy Now' buttons
+       // Add event listeners to 'Buy Now' buttons
+      const buyNowButtons = document.querySelectorAll('.buy-now');
+      buyNowButtons.forEach(button => {
+          button.addEventListener('click', (event) => {
+              let index = event.target.getAttribute('data-index');
+              let selectedProduct = products[index];
+      
+              // Get existing cart items from local storage or initialize an empty array
+              let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      
+              // Add selected product to cart
+              cart.push(selectedProduct);
+      
+              // Save updated cart to local storage
+              localStorage.setItem('cart', JSON.stringify(cart));
+              
+              // Redirect to checkout.html
+              window.location.href = 'checkout.html';
+          });
+      });
+      
+          const addToCartButtons = document.querySelectorAll('.add-to-cart');
+          addToCartButtons.forEach(button => {
+              button.addEventListener('click', (event) => {
+                  let index = event.target.getAttribute('data-index');
+                  let selectedProduct = products[index];
+      
+                  // Get existing cart items from local storage or initialize an empty array
+                  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      
+                  // Add selected product to cart
+                  cart.push(selectedProduct);
+      
+                  // Save updated cart to local storage
+                  localStorage.setItem('cart', JSON.stringify(cart));
+                  alert(`Your product has been added to your cart!`);
+              });
+          });
+      }
+      // Display the number of items in the cart
+      function updateCartCount() {
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+          let basket = document.querySelector('.basket');
+          let cartCount = document.createElement('span');
+          cartCount.className = 'cart-count';
+          cartCount.textContent = cart.length;
+          basket.appendChild(cartCount);
+      }
+      
+      // Run updateCartCount on page load
+      window.addEventListener('DOMContentLoaded', updateCartCount);
+      
+      // / CSS for basket count styling
+      const style = document.createElement('style');
+      style.innerHTML = `
+          .cart-count {
+              position: absolute;
+              top: 0;
+              right: 0;
+              background-color: red;
+              color: white;
+              font-size: 12px;
+              border-radius: 50%;
+              width: 15px;
+              height: 15px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transform: translate(50%, -50%);
+          }
+          .basket {
+              position: relative;
+              display: inline-block;
+          }
+      `;
+      document.head.appendChild(style);
+      
+      
+      
+      function PKR_to_USD(price){
+        return price*270;
+      }
+      
+                  </script>
+              </div>
+          </section>
+      
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+       <!-- Team Container -->
+       <div class="w3-container w3-padding-64 w3-center bg-dark text-light" id="team">
+        <h2>Women Wear</h2>
+        <p>Hot Selling Categories</p>
+        
+        <div class="w3-row"><br>
+    
+        <div class="w3-quarter">
+          <a href="dailyWear.html">
+            <img src="/Assets/image12.png" alt="Daily Wear" style="width:45%" class="w3-circle w3-hover-opacity">
+          </a>
+          <h3>Daily Wear</h3>
+        </div>
+        
+        <div class="w3-quarter">
+          <a href="western.html">
+            <img src="/Assets/image13.png" alt="Western" style="width:45%" class="w3-circle w3-hover-opacity">
+          </a>
+          <h3>Western</h3>
+        </div>
+        
+        <div class="w3-quarter">
+          <a href="signature.html">
+            <img src="/Assets/image14.png" alt="Signature" style="width:45%" class="w3-circle w3-hover-opacity">
+          </a>
+          <h3>Signature</h3>
+        </div>
+        
+        <div class="w3-quarter">
+          <a href="glam.html">
+            <img src="/Assets/image15.png" alt="Glam" style="width:45%" class="w3-circle w3-hover-opacity">
+          </a>
+          <h3>Glam</h3>
+        </div>
+        
+        </div>
+    </div>
+<!-- footer  -->
+<footer class="w3-padding-96 w3-light-grey w3-large w3-center bg-tertiary" id="footer">
+    <div class="w3-row-padding w3-padding-32">
+        <div class="w3-col s12 m6 l4 w3-padding-large">
+            <h3>Store</h3>
+            <p><i class="fa fa-fw fa-map-marker w3-xlarge"></i> Glamour Wear</p>
+            <p><i class="fa fa-fw fa-phone w3-xlarge"></i> +92 300 1234567</p>
+            <p><i class="fa fa-fw fa-envelope w3-xlarge"></i> support@glamourwear.com</p>
+            <h3>We accept</h3>
+            <p><i class="fa fa-fw fa-cc-amex w3-xlarge"></i> Amex</p>
+            <p><i class="fa fa-fw fa-credit-card w3-xlarge"></i> Credit/Debit Cards</p>
+        </div>
+
+        <div class="w3-col s12 m6 l4 w3-padding-large">
+            <h3>Contact</h3>
+            <p>Have any questions? We'd love to hear from you!</p>
+            <form action="" target="_blank">
+                <p><input class="w3-input w3-border w3-large" type="text" placeholder="Name" name="Name" required></p>
+                <p><input class="w3-input w3-border w3-large" type="email" placeholder="Email" name="Email" required></p>
+                <p><textarea class="w3-input w3-border w3-large" placeholder="Message" name="Message" required></textarea></p>
+                <button type="submit" class="w3-button w3-block w3-black w3-xlarge">Send</button>
+            </form>
+        </div>
+
+    
+        <div class="w3-col s12 l4 w3-padding-large w3-center">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i></a>
+            <a href="#"><i class="fa fa-instagram w3-hover-opacity w3-xxlarge"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p w3-hover-opacity w3-xxlarge"></i></a>
+            <a href="#"><i class="fa fa-twitter w3-hover-opacity w3-xxlarge"></i></a>
+        </div>
+    </div>
+</footer>
+
+ 
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+
+  <!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+      <div class="w3-container w3-white w3-center">
+        <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+        <h2 class="w3-wide">NEWSLETTER</h2>
+        <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+        <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  // Accordion 
+  function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // Click on the "Jeans" link on page load to open the accordion for demo purposes
+  document.getElementById("myBtn").click();
+  
+  
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  </script>
+  
+            
+          <!-- footer ending text -->
+          <footer class="bg-dark text-light py-3">
+              <div class="container text-center">
+                <p class="mb-0">Copyright © <a href="https://imhammad21.github.io/HDCODE" class="text-light">www.FashionGroves.com</a>. All rights reserved!</p>
+              </div>
+            </footer>
+            
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    
+</body>
+</html>
